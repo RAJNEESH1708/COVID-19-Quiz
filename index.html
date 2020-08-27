@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>COVID-19 Quiz</title>
+
+<link rel="stylesheet" href="styles.css">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Cookie&family=Lobster+Two&family=Play&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <ul>
+<li>COVID-19 Quiz</li>
+
+</ul>
+  <header>
+
+  </header>
+  <middle>
+
+    <div id="container" >
+
+    <div id="start">Click here to Start Quiz!</div>
+
+    <div id="scoreContainer" style="display: none"></div>
+
+    <div id="quiz" style="display:None">
+
+        <div id="question"></div>
+
+        <div id="qImg"></div>
+
+        <div id="choices" class='flex-container'>
+
+            <div class="choice" id="A" onclick="checkAnswer('A')" ></div>
+            <div class="choice" id="B" onclick="checkAnswer('B')" ></div>
+            <div class="choice" id="C" onclick="checkAnswer('C')" ></div>
+            <div class="choice" id="D" onclick="checkAnswer('D')" ></div>
+
+        </div>
+
+        <!-- <div id="timer">
+
+            <div id="counter"></div>
+
+            <div id="btimeGauge"></div>
+
+            <div id="timeGauge"></div>
+
+        </div> -->
+
+        <div id="progress"></div>
+
+    </div>
+
+  </middle>
+
+  <footer  id="navigate" style="visibility : hidden">
+    <button type="submit" id='prev' name="prev" class='button' onclick="prevq()">Previous</button>
+    <button type="submit" id='next' name="next" class='button'onclick="nextq()">Next</button>
+
+  </footer>
+
+  <div class="bnavbar" style="visibility : visible">
+       <p>
+         There are total 10 questions!
+       </p>
+</div>
+
+  <script src="script.js"></script>
+  <script type="Quiz.js"></script>
+
+</body>
+
+</html>

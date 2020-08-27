@@ -1,0 +1,300 @@
+/* * {
+  box-sizing: border-box
+} */
+
+body, html{
+  margin: 0;
+  background-image: url('images/coronavirus.jpg');
+
+
+  font-size: 20px;
+  font-family: monospace;
+
+
+height: 100%;
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+
+ul {
+  font-family: 'Lobster Two', cursive;
+  color: white;
+  font-size: 1.75rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 30px ;
+  background-color: black;
+  opacity: 0.7;
+
+}
+
+#container{
+    padding: 3rem;
+    margin : 4rem auto;
+    background-color: black;
+    height: 40%;
+    width : 50%;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px;
+    position: relative;
+    opacity: 0.7;
+    box-shadow: 100%;
+}
+
+
+
+
+#start{
+font-family: 'Cookie', cursive;
+    font-size: 3em;
+    text-align:center;
+    font-weight: bolder;
+  //  word-break: break-all;
+  margin-left: 0;
+  padding-top: 5rem;
+    /* width:50%;*/
+    height:50%;
+    /* border : 2px solid lightgrey; */
+
+    cursor: pointer;
+    position: relative;
+    /* left:180px;
+    top:  82px; */
+    color : lightgrey;
+}
+#start:hover{
+
+    color : lightseagreen;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-around;
+  color: white;
+}
+
+#question{
+  font-family: 'Play', sans-serif;
+  text-align: left;
+  color: white;
+    width:500px;
+    height : 75px;
+    /* position: absolute; */
+    right:0;
+    top:0;
+
+}
+#question p{
+    margin : 0;
+    padding : 15px;
+    font-size: 1.25em;
+}
+
+/* #choices{
+    width : 480px;
+    position: absolute;
+    right : 0;
+    top : 125px;
+    padding : 10px
+} */
+.choice{
+    /* display: inline-block; */
+    width : 80%;
+    margin: 10px auto 10px 0;
+    text-align: left;
+    border : 1.5px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+    padding : 5px;
+    font-family: 'Play', sans-serif;
+
+
+}
+.choice:hover{
+    border : 3px solid grey;
+    font-weight: bold;
+    background-color: grey;
+}
+
+#timer{
+    position: absolute;
+    height : 100px;
+    width : 200px;
+    bottom : 0px;
+    text-align: center;
+}
+#counter{
+    font-size: 3em;
+}
+#btimeGauge{
+    width : 150px;
+    height : 10px;
+    border-radius: 10px;
+    background-color: lightgray;
+    margin-left : 25px;
+}
+#timeGauge{
+    height : 10px;
+    border-radius: 10px;
+    background-color: mediumseagreen;
+    margin-top : -10px;
+    margin-left : 25px;
+}
+#progress{
+    width : 500px;
+    position: absolute;
+    bottom : 0px;
+    right : 0px;
+    padding:5px;
+    text-align: center;
+    margin-right: 32%;
+}
+
+#navigate{
+  margin-top: 10%;
+  padding: 10px;
+  text-align: right;
+
+}
+
+
+
+
+.button{
+  position: relative;
+  background-color: black;
+  color: white;
+  border : 3px solid grey;
+  margin-right: 5%;
+  font-size: 1rem;
+  border-radius: 10px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  opacity: 0.8
+
+
+}
+
+.button:hover{
+  background-color: #e7e7e7;
+  color: black;
+}
+
+
+
+
+
+.prog{
+    width : 25px;
+    height : 25px;
+    border: 1px solid #000;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left : 5px;
+    margin-right : 5px;
+}
+
+#scoreContainer{
+
+  font-family: 'Cookie', cursive;
+      font-size: 3.5em;
+
+      font-weight: bolder;
+    margin-top: 0;
+    padding-left: 12rem;
+      padding-right: 12rem;
+      /* width:50%;*/
+      height:50%;
+      /* border : 2px solid lightgrey; */
+
+      cursor: pointer;
+      position: relative;
+      /* left:180px;
+      top:  82px; */
+      color : lightgrey;
+
+    /* padding: 3rem;
+    color: white;
+    margin : 4rem auto;
+    background-color: black;
+    height: 40%;
+    width : 50%;
+    box-shadow: 0px 5px 15px 0px;
+    border-radius: 5px;
+
+    position: relative; */
+    opacity: 0.7;
+
+}
+
+#scoreContainer p{
+  color: white;
+    /* position: absolute; */
+    display: block;
+
+    top:130px;
+    left:325px;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.bnavbar {
+  text-align: center;
+  overflow: hidden;
+  
+  bottom: 0;
+  width: 100%;
+  font-family: 'Lobster Two', cursive;
+  color: white;
+  font-size: 1.75rem;
+  margin: 0;
+  padding-top: 5px  ;
+  padding-bottom: 5px;
+  background-color: black;
+  opacity: 0.7;
+}
+
+.bnavbar p{
+  margin: 0
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* On smaller screens, decrease text size */
+
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+  body{
+    margin: 0;
+    background-image: url('images/coronavirus.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
