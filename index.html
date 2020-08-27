@@ -5,30 +5,56 @@
   <meta charset="utf-8">
   <title>COVID-19 Quiz</title>
 
-<link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
 
 
-<link href="https://fonts.googleapis.com/css2?family=Cookie&family=Lobster+Two&family=Play&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Lobster+Two&family=Play&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
   <ul>
-<li>COVID-19 Quiz</li>
+    <li>COVID-19 Quiz</li>
 
-</ul>
-  <header>
+  </ul>
 
-  </header>
+  <div id="qBar" style="visibility : hidden">
+
+    <div id="q1" onclick="goto(Number(1))">1</div>
+    <div id="q2" onclick="goto(Number(2))">2</div>
+    <div id="q3" onclick="goto(Number(3))">3</div>
+    <div id="q4" onclick="goto(Number(4))">4</div>
+    <div id="q5" onclick="goto(Number(5))">5</div>
+    <div id="q6" onclick="goto(Number(6))">6</div>
+    <div id="q7" onclick="goto(Number(7))">7</div>
+    <div id="q8" onclick="goto(Number(8))">8</div>
+    <div id="q9" onclick="goto(Number(9))">9</div>
+    <div id="q10" onclick="goto(Number(10))">10</div>
+
+  </div>
+
   <middle>
 
-    <div id="container" >
+    <div id="container">
 
-    <div id="start">Click here to Start Quiz!</div>
+      <div id="start">
+        <p>
+          Enter your name to Start Quiz!
+        </p>
+        <form id="form" onsubmit="return false;">
+          <label>Name:</label>
+          <input type="text" id="userInput">
+          <br>
+          <button type="submit" name="button" class='button1' onclick="startQuiz()">Start</button>
 
-    <div id="scoreContainer" style="display: none"></div>
+        </form>
+      </div>
 
-    <div id="quiz" style="display:None">
+
+
+      <div id="scoreContainer" style="display: none"></div>
+
+      <div id="quiz" style="display:None">
 
         <div id="question"></div>
 
@@ -36,40 +62,37 @@
 
         <div id="choices" class='flex-container'>
 
-            <div class="choice" id="A" onclick="checkAnswer('A')" ></div>
-            <div class="choice" id="B" onclick="checkAnswer('B')" ></div>
-            <div class="choice" id="C" onclick="checkAnswer('C')" ></div>
-            <div class="choice" id="D" onclick="checkAnswer('D')" ></div>
+          <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+          <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+          <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+          <div class="choice" id="D" onclick="checkAnswer('D')"></div>
 
         </div>
 
-        <!-- <div id="timer">
-
-            <div id="counter"></div>
-
-            <div id="btimeGauge"></div>
-
-            <div id="timeGauge"></div>
-
-        </div> -->
-
         <div id="progress"></div>
 
-    </div>
+      </div>
 
   </middle>
 
-  <footer  id="navigate" style="visibility : hidden">
+  <footer id="navigate" style="visibility : hidden">
+    <div id="timer">
+      <div id="counter"></div>
+      <div id="btimeGauge"></div>
+      <div id="timeGauge"></div>
+    </div>
     <button type="submit" id='prev' name="prev" class='button' onclick="prevq()">Previous</button>
-    <button type="submit" id='next' name="next" class='button'onclick="nextq()">Next</button>
+    <button type="submit" id='next' name="next" class='button' onclick="nextq()">Next</button>
 
   </footer>
 
+
+
   <div class="bnavbar" style="visibility : visible">
-       <p>
-         There are total 10 questions!
-       </p>
-</div>
+
+    Instructions: There are total 10 questions and 60 seconds to answer them.
+
+  </div>
 
   <script src="script.js"></script>
   <script type="Quiz.js"></script>
